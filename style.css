@@ -19,11 +19,17 @@ nav ul{
     list-style-type: none;
     height: 65px;
     background-color: black;
-    color: white;
+    color: aquamarine;
 }
 
 nav ul li{
     padding: 0 12px;
+}
+
+#logo{
+    font-weight: bold;
+    font-size: 19px;
+    color: aqua;
 }
 .brand img{
     width: 44px;
