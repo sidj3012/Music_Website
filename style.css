@@ -19,11 +19,21 @@ nav ul{
     list-style-type: none;
     height: 65px;
     background-color: black;
-    color: white;
+    color: aquamarine;
 }
 
 nav ul li{
     padding: 0 12px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+#logo{
+    font-weight: bold;
+    font-size: 19px;
+    color: aqua;
 }
 .brand img{
     width: 44px;
@@ -49,6 +59,56 @@ nav ul li{
    padding: 34px;
    background-image: url('bg.jpg');
 }
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   margin: 23px auto;
+   width: 70%;
+   border-radius: 12px;
+   padding: 34px;
+}
+
+.artist {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 2px solid #333; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.artist-name {
+    flex-grow: 1; /* Expands to fill available space */
+    font-weight: bold;
+}
+
+.artist img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px; /* Adjust spacing between name and photo */
+}
+.artist span {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: aqua;
+    float: right;
+    text-align: right;
+    padding-left: 2rem;
+}
+
 
 .bottom{
     position: sticky;

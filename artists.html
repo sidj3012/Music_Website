@@ -18,13 +18,43 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h3>Listen to your favourite songs for free</h>
+
+    <div class="container" id="container"  style="display: none;">
+        <h3 id="heading"></h3>
         <div class="songItemContainer" id="songItemContainer">
             <!-- Song items will be added here dynamically using JavaScript -->
         </div>
         <div class="songBanner"></div>
     </div>
+
+    <div class="container2" id="container2">
+        <div class="artist" id="arijit">
+            <img src="arijitsingh.jpg" alt="Artist 1">
+            <span>Arijit Singh</span>
+        </div>
+        <div class="artist">
+            <img src="justin.jpg" alt="Artist 2">
+            <span>Justin Bieber</span>
+        </div>
+        <div class="artist">
+            <img src="atifaslam.jpeg" alt="Artist 3">
+            <span>Atif Aslam</span>
+        </div>
+        <div class="artist">
+            <img src="arijitsingh.jpg" alt="Artist 1">
+            <span>Arijit Singh</span>
+        </div>
+        <div class="artist">
+            <img src="artist2.jpg" alt="Artist 2">
+            <span>Artist Name 2</span>
+        </div>
+        <div class="artist">
+            <img src="artist3.jpg" alt="Artist 3">
+            <span>Artist Name 3</span>
+        </div>
+        <!-- Add more artists as needed -->
+    </div>
+    
 
     <div class="bottom">
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
@@ -38,7 +68,9 @@
             <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    
+    <script src="artists.js"></script>
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
 </html>
