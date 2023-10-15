@@ -1,4 +1,4 @@
-console.log("Welcome to Group X- Online Music");
+
 
  audioElement = new Audio('songs/1.mp3');
  songIndex = 0;
