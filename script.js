@@ -1,13 +1,12 @@
-console.log("Welcome to Spotify");
+console.log("Welcome to Group X- Online Music");
 
-// Initialize the Variables
-let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
-let masterPlay = document.getElementById('masterPlay');
-let myProgressBar = document.getElementById('myProgressBar');
-let gif = document.getElementById('gif');
-let masterSongName = document.getElementById('masterSongName');
-let songItems = Array.from(document.getElementsByClassName('songItem'));
+ audioElement = new Audio('songs/1.mp3');
+ songIndex = 0;
+ masterPlay = document.getElementById('masterPlay');
+ myProgressBar = document.getElementById('myProgressBar');
+ gif = document.getElementById('gif');
+ masterSongName = document.getElementById('masterSongName');
+ songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
     {songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
@@ -22,11 +21,28 @@ let songs = [
     {songName: "Na Jaana - Salam-e-Ishq", filePath: "songs/4.mp3", coverPath: "covers/10.jpg"},
 ]
 
-songItems.forEach((element, i)=>{ 
-    element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
-    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
-})
+const songItemContainer = document.getElementById("songItemContainer");
+
+
+
+songs.forEach((song, index) => {
+    const songItem = document.createElement("div");
+    songItem.className = "songItem";
+
+    songItem.innerHTML = `
+        <img alt="${index + 1}" src="${song.coverPath}">
+        <span class="songName">${song.songName}</span>
+        <span class="songlistplay">
+            <span class="timestamp">
+                <i id="${index}" class="far songItemPlay fa-play-circle"></i>
+            </span>
+        </span>
+    `;
+
+    songItemContainer.appendChild(songItem);
+});
  
+
 
 // Handle play/pause click
 masterPlay.addEventListener('click', ()=>{
