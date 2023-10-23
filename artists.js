@@ -9,13 +9,24 @@ songs = [
 
 document.getElementById("arijit").addEventListener('click',()=>{
     songs = [
-        {songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
-        {songName: "Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
-        {songName: "DEAF KEV - Invincible [NCS Release]-320k", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
-        {songName: "Different Heaven & EH!DE - My Heart [NCS Release]", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+        {songName: "Tum Hi Ho", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+        {songName: "Kesariya", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+        {songName: "Jmoome JO Pathaan", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+        {songName: "Kalank- Title Track", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
         {songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
     ]
     document.getElementById("heading").innerHTML="Arijit Singh"
+    func();
+})
+document.getElementById("justin").addEventListener('click',()=>{
+    songs = [
+        {songName: "Tum Hi Ho", filePath: "songs/1.mp3", coverPath: "covers/1.jpg"},
+        {songName: "Kesariya", filePath: "songs/2.mp3", coverPath: "covers/2.jpg"},
+        {songName: "Jmoome JO Pathaan", filePath: "songs/3.mp3", coverPath: "covers/3.jpg"},
+        {songName: "Kalank- Title Track", filePath: "songs/4.mp3", coverPath: "covers/4.jpg"},
+        {songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release", filePath: "songs/5.mp3", coverPath: "covers/5.jpg"},
+    ]
+    document.getElementById("heading").innerHTML="Justin Bieber"
     func();
 })
 
